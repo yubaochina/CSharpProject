@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace WinFormStudy
@@ -55,6 +49,33 @@ namespace WinFormStudy
     private void Form1_Load(object sender, EventArgs e)
     {
       button_showName.Text = "OK";
+    }
+
+    private void fileToolStripMenuItem_Click(object sender, EventArgs e)
+    {
+
+    }
+
+    private void closeToolStripMenuItem_Click(object sender, EventArgs e)
+    {
+      this.Close();
+    }
+    int count = 0;
+    private void menuStrip_file_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+    {
+      if(e.ClickedItem == closeToolStripMenuItem)
+      { 
+        count++;
+      }
+    }
+
+    private void Form1_FormClosed(object sender, FormClosedEventArgs e)
+    {
+      if(e.CloseReason == CloseReason.UserClosing)
+      {
+     //   e.Cancel = true;
+        this.Hide();
+      }
     }
   }
 }
