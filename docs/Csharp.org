@@ -1,4 +1,14 @@
 ﻿* Grammer
+** Namespace
+
+| namespace name         | Reference dll   |
+|------------------------+-----------------|
+| System.Windows.Interop | WindowsBase.DLL |
+|------------------------+-----------------|
+|                        |                 |
+|------------------------+-----------------|
+|                        |                 |
+
 ** Class
 ** Object
 Object类是所有类的共同基类，它是唯一的非派生类，是继承层次结构的基础。
