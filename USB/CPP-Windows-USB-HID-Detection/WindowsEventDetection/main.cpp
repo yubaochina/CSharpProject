@@ -189,7 +189,6 @@ INT_PTR WINAPI WinProcCallback(
 
 	case WM_SETFOCUS:
 		SetFocus(hEditWnd);
-
 		break;
 
 	case WM_SIZE:
